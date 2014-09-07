@@ -1,0 +1,718 @@
+/*
+Theme Name:         Київ мрії
+Theme URI:          
+Description:       
+Template:      shoestrap-3 
+Version:            
+Author:             lilumi
+Author URI:         http://
+Tags:               dark, light, one-column, two-columns, left-sidebar, right-sidebar, fluid-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, microformats, rtl-language-support, holiday, seasonal
+*/
+
+html {
+    overflow-x:auto !important;
+}
+
+.cf:before,.cf:after { content:""; display:table;}
+.cf:after { clear:both;} 
+.cf { zoom:1; }
+
+#banner-header {
+  background-color: transparent;
+  border:0;
+}
+
+/*
+#banner-header .container {
+  border-bottom: 1px solid #000;
+}
+*/
+
+.sitename {
+  font-family: 'PT Sans Caption';
+  font-size: 51px;
+}
+
+.nav {
+  font-family: 'PT Sans Caption';
+  font-size: 28px;  
+}
+
+.navbar-nav > li {
+    margin-left:18px;
+}
+
+.preview {
+	margin-bottom: 20px;
+}
+
+/*
+.preview img{
+ width: 100% !important;
+ height: auto !important;
+}
+*/
+
+.post-categories {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-categories:after {
+  content:""; display:table; clear: both;
+}
+
+.post-categories a {
+  display: block;
+  padding: 4px 6px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #000;
+  text-align: center;
+  float: left;
+  font-size: 75%;
+  line-height: 130%;
+}
+
+.all-news:before {
+  content: "\00BB\0020";
+  left:-5px;
+}
+.all-news {
+  display: block;
+  float: right;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.topnews-info {
+  position: absolute !important;
+  width: auto;
+  height: auto;
+  left: 15px;
+  right: 15px;
+  bottom: 0px;
+  color: #fff;
+  background-color: rgba(0,0,0, .25);
+  float: none !important;
+  padding: 10px 15px;  
+}
+
+
+.topnews-info a, .topnews-info a:visited{
+  color: #fff;
+}
+
+.topnews-info a:hover{
+  color: red;
+}
+
+.topnews-title {
+  
+}
+
+.face-excerpt p{
+  font-size: 11px;
+  line-height: 1.2em;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.face-news {
+    margin-bottom: 20px;
+}
+
+.face-news img {
+  height: auto !important;
+}
+
+.face-meta {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+.wide-banner img {
+  width: 100%;
+  height: auto;
+}
+
+#footer-copyright {
+  float: left;
+}
+
+.footer-menu li{
+  list-style: none;
+  float: left;
+  margin-left: 15px;
+}
+
+body.single .post-meta-cats {
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+body.single .post-meta-cats .label {
+  font-weight: normal;
+  font-size: 16px;  
+}
+
+body.single  .panel-body {
+  padding: 0;
+}
+
+body.single .post-meta-cats .panel-heading {
+  display: none;
+} 
+
+
+h1.entry-title,
+h2.entry-title,
+h3.entry-title
+{
+   font-family: 'PT Sans Caption';
+}
+
+body.single h3
+{
+   font-size: 130%;
+   font-weight: 600;
+}
+
+
+body.single .entry-title,
+body.single .entry-content p,
+body.single .entry-content figure.alignnone,
+body.single .entry-content h4,
+body.single .entry-content h5,
+body.single .entry-content h6
+
+{
+}
+
+body.single h1 {
+  margin-bottom: 25px;
+}
+
+body.single .post img.size-large {
+  margin-left:-150px;
+  margin-bottom: 20px;
+}
+
+body.single p {
+  margin-bottom: 30px;
+}
+
+body.single p.text-definition {
+  background-color: rgb(247, 245, 240);
+  padding: 20px;
+}
+
+
+#home-blog > article{
+ margin-bottom: 50px;
+}
+
+nav.pagination {
+ margin: 10px 0;
+}
+
+nav.pagination li > span {
+ border: 0;
+ padding: 5px 0px;
+ margin-left:5px;
+ width: 36px;
+ text-align: center;
+}
+
+nav.pagination li a {
+ border-radius: 36px;
+ border: 0;
+ margin-left:5px;
+ padding: 5px 0px;
+ width: 36px;
+ text-align: center;
+}
+
+nav.pagination  li:first-child > a, nav.pagination li:first-child > span,
+nav.pagination  li:last-child > a, nav.pagination li:last-child > span{
+ border-radius: 30px;
+}
+
+nav.pagination li a i{
+ font-size: 80%;
+}
+
+/* addons */
+.container {
+    position:relative;
+}
+
+#banner-header .container {
+padding-top: 30px;
+}
+
+.nav-main .navbar-nav {
+    margin-right: 50px;
+}
+
+#menu-menu .menu-vybory:after {
+    content: 'Спецпроект';
+    font-size: 9px;
+    font-family: Arial;
+    line-height: 12px;
+    color: #ff5a00;
+    position: absolute;
+    top: -4px;
+    right: -17px;
+    padding: 1px;
+    z-index: 10;
+}
+
+/*
+.front-main.preview {
+    height: 500px;
+}
+*/
+    
+.front-main.preview .topnews-wrapper {
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.front-sidebar.preview {
+    height: 240px;
+    margin-bottom: 20px;
+}
+.front-sidebar.preview .topnews-wrapper {
+    height: 240px;
+    background-size: cover;
+    background-position: center center;
+}
+    
+
+.facebook-logo {
+    position: absolute;
+    right: 16px;
+    top: 40px;
+}
+.facebook-logo a {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+hr {
+    border-top-color:#000 !important;
+}
+
+.front-main .topnews-info {
+    font-size:27px;
+    line-height: 60px;
+}
+
+.topnews-category {
+    position:absolute;
+    top:10px;
+    left:30px;
+}
+
+.topnews-category li {
+    display:inline-block;
+}
+
+.topnews-category a {
+    color:#fff !important;
+}
+
+.entry-copyright {
+    font-size:14px;
+    overflow: hidden;
+}
+
+.entry-author,
+.entry-photographer {
+    float:left;
+    margin-right: 10px;
+    min-width:250px;
+}
+
+.entry-author .author-avatar {
+    display:inline-block;
+    margin-top:5px;
+    margin-right:5px;
+    vertical-align: top;
+}
+
+.entry-author .author-name {
+    display:inline-block;
+}
+
+.bigrow {
+  margin-top:25px;
+}
+
+
+.social-item {
+    margin:20px 20px 10px;
+    position:relative;
+        
+}
+
+.post-type-archive-social .social-item {
+    margin: 0 0 40px;
+}
+
+.social-item .item-avatar {
+    position:absolute;
+    width:50px;
+    top:0;
+}
+
+.social-item .item-avatar img {
+    border-radius:25px;
+}
+
+.social-item .item-content {
+    padding:0 0 0 60px;
+}
+
+.social-item .item-author {
+    font-size:14px;
+    color:#aaa;
+}
+
+.similar {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.similar .image-wrapper {
+    height:240px;
+    background-size:cover;
+}
+
+.similar .topnews-info {
+    font-size:15px;
+    padding:8px 10px;
+}
+
+.donate {
+    background:#aaa;
+    padding:5px 10px;
+    color:#fff;
+}
+
+.item-gallery-post {
+    margin-bottom:15px;
+}
+
+.item-gallery-post .item-gallery-image {
+    width:360px;
+    display: block;
+}
+
+.item-gallery-post .item-galery-category {
+    margin: 10px 0;
+}
+
+.item-gallery-post .item-galery-category a {
+    border:1px solid black;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.news-preview {
+    margin-left:-15px;
+    margin-right:-15px;
+}
+
+.news-preview h2{
+    margin-left:15px;
+}
+
+.news-preview .news-item {
+    font-size:16px;
+}
+
+.news-preview .news-item .date {
+    font-size:12px;
+    color:#aaa;
+}
+
+.news-preview .news-item .date:before {
+    padding-right: 10px;
+}
+
+
+.candidate-title {
+    text-align: center;
+}
+
+.candidate-thumb {
+    width:100px;
+    height:100px;
+    background-size:cover;
+    border-radius: 50px;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+.archive-link {
+    float: right;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.archive-link a {
+    text-decoration: underline;
+}
+
+.archive-link a:hover {
+    text-decoration: none;
+}
+
+.category-novini h2 {
+    font-size:120%;
+}
+
+/*13.05.14*/
+.candidate-heading {margin-top:42px;}
+.party-candidate {padding: 10px 0;}
+
+h1 {font-weight:500;}
+#accordion {margin-top: 20px;}
+.panel-body {background-color: #ddd;}
+.panel-body p {background-color: #656565;}
+.panel-body a {color: #fff;}
+
+/*14.05.14*/
+.row-meta {
+    font-size:16px;
+}
+
+.type-post .similar {
+    margin-top:60px;
+    margin-bottom:60px;
+}
+
+/*   
+#content img {
+    max-width:none;
+}
+*/
+
+.disqualified {
+    background:red;
+    color:white;
+    padding:0 5px;
+    position:absolute;
+    font-weight: normal;
+    left:50%;
+    top:0;
+    border-radius: 3px;
+}
+
+.candidates-compare th {
+    position:relative;
+}
+
+.navbar a.navbar-brand.logo {
+    height:63px !important;
+}
+
+.logo:after {
+    content:'beta';
+    color:gray;
+    position:absolute;
+    font-size:11px;
+    margin-top:-10px;
+    margin-left:-10px;
+}
+#menu-menu .menu-vybory > a {
+  position: relative;
+}
+#menu-menu .menu-vybory > a:before {
+    background: url("zakogo_logo_small.png") repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+    content: "";
+    display: block;
+    height: 36px;
+    left: -6px;
+    position: absolute;
+    top: 3px;
+    width: 30px;
+}
+#menu-menu .menu-vybory .caret {
+  display: none;
+}
+#menu-menu .menu-vybory ul {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    box-shadow: 0 0 0;
+    display: flex;
+    left: -100%;
+    position: absolute;
+}
+#menu-menu .menu-vybory ul li {
+  float: left;
+}
+#menu-menu .menu-vybory ul li a {
+    color: #637B23 !important;
+    padding-left: 0 !important;
+    padding-right: 25px !important;
+}
+#menu-menu .menu-vybory ul li a:first-child {
+  padding-left: 5px !important;
+}
+form[method="get"] .col-sm-4,
+ {
+    background-color: #EEEEEE;
+    border-right: 10px solid #FFFFFF;
+    padding: 0 10px;
+}
+form[method="get"] .col-sm-4 h3.text-center.ballot small {
+    color: #3D3D3D;
+    font-size: 22px;
+}
+.bg-success {
+    background: #fff!important;
+    padding: 10px;
+}
+.single-area .row.districts .col-sm-2 {
+    background: none repeat scroll 0 0 #656565;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 0 !important;
+    width: 70px;
+}
+.single-area .row.districts .col-sm-2 p {
+  margin-bottom: 0 !important;
+  color: #fff;
+}
+.single-area .row.districts .col-sm-2 p a {
+  color: #fff !important;
+}
+.row.party-line {
+	background-color: #EEEEEE;
+	border-bottom: 8px solid #fff;
+}
+.row.party-line .col-sm-4,
+.row.party-line .col-sm-1,
+.row.party-line .col-sm-7   {
+    background-color: #EEEEEE;
+    overflow: hidden;
+}
+.row.party-line .col-xs-2 img {
+	margin: 10px 0;
+}
+.main.col-sm-12 > header:first-child {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+    nav.nav-main.navbar-collapse.collapse {
+        float: left;
+        margin: 0;
+    }
+    nav.nav-main.navbar-collapse.collapse ul {
+        float: left;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .facebook-logo {
+        display: none;
+    }
+    nav.nav-main.navbar-collapse.collapse {
+        float: right;
+        overflow: hidden;
+    }
+    #menu-menu .menu-vybory ul {
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+        border: medium none;
+        box-shadow: 0 0 0;
+        display: block;
+        left: auto;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    #menu-menu .menu-vybory ul li {
+        float: none;
+    }
+}
+
+.ui-autocomplete li {
+    padding: 2px;
+    border: 1px solid white;
+}
+
+.zakogo-ac-list-street {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.zakogo-ac-region {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.zakogo-ac-list-item {
+    font-size: 14px;
+    with: 100%;
+}
+
+.zakogo-ac-list {
+    max-height: 300px;
+    line-height: normal;
+}
+
+.zakogo-ac-previous {
+    font-size: 14px;
+    line-height: auto;
+}
+
+.zakogo-candidate-party {
+    font-style: italic;
+}
+
+.zakogo-ac-found-text {
+font-weight: bold;
+}
+
+div.zakogo-ballot-compare {
+    text-align:center;
+    margin-bottom: 10px;	
+}
+
+.ugc-inner-wrapper h2 {
+    font-size: 14px;
+}
+
+.ugc-inner-wrapper {
+ //   float: right;
+    width: 800px;
+    font-size: 12px;
+}
+
+.ugc-input-wrapper {
+    padding: 3px;
+    clear: both;
+}
+
+#ug_content, .ugc-inner-wrapper input, .ugc-inner-wrapper textaread{
+//    float: right;
+    width: 400px;
+}
+
+#ug_submit_button {
+    width: auto;
+}
