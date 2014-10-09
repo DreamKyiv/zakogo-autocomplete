@@ -2,9 +2,11 @@
 /**
  * Plugin Name: Za Kogo Autocomplete
  * Description: Adds jQuery Autocomplete functionality with addresses to Za Kogo search box (base on SearchAutocomplete plugin )
- * Version: 0.5.0
+ * Version: 0.6.0
  * Author: Vitaliy Pylypiv
  * License: GPLv2 or later
+ * GitHub Plugin URI: https://github.com/DreamKyiv/zakogo-autocomplete
+ * GitHub Branch:     master
  */
 class ZaKogoAutocomplete {
 	protected static $options_field = "sa_settings";
@@ -163,14 +165,36 @@ class ZaKogoAutocomplete {
 							$region = get_field( 'район', $district_id );
 						}
 						
+						// points to district by default
 						$linkURL = add_query_arg( array( 'pollstation' => $row['post_id'] ), $linkURL );
-						/*
-						$field = get_post_meta( $row['post_id'], 'номер' );
-						if( $field && count($field) ) {
-							$linkURL .= ( strpos($linkURL,'?') > 0 ? '&' : '?' ).'polling_station='.$field[0]; 						
-						}
-						*/
-	
+
+                        // try to find a winner
+                        $query = new WP_Query(
+                            array(
+                            'post_type' => 'kandidat',
+                            'post_status' => 'publish',
+                            'meta_query' => array(
+                                'relation' => 'AND',
+                                array(
+                                    'key' => 'okrugg',
+                                    'value' => $district_id,
+                                    'compare' => '='
+                                ),
+                                array(
+                                    'key' => 'победитель',
+                                    'value' => 1,
+                                    'compare' => '='
+                                )
+                            )
+                        ));
+
+                        if( $query->have_posts() ) {
+                            // winner is found
+                            $winners = $query->get_posts();
+                            $winner_id = $winners[0]->ID;
+                            $linkURL = get_permalink( $winner_id );
+                        }
+
 						if( strpos($row['meta_value'], ':' ) > 0 ) {
 							// split by buildings
 							list( $street, $buildings) = explode(':', $row['meta_value'] );
