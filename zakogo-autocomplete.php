@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Za Kogo Autocomplete
  * Description: Adds jQuery Autocomplete functionality with addresses to Za Kogo search box (base on SearchAutocomplete plugin )
- * Version: 0.7.0
+ * Version: 0.8.0
  * Author: Vitaliy Pylypiv
  * License: GPLv2 or later
  * GitHub Plugin URI: https://github.com/DreamKyiv/zakogo-autocomplete
@@ -11,7 +11,7 @@
 class ZaKogoAutocomplete {
 	protected static $options_field = "sa_settings";
 	protected static $options_field_ver = "sa_settings_ver";
-	protected static $options_field_current_ver = "0.7.0";
+	protected static $options_field_current_ver = "0.8.0";
 	protected static $options_default = array(
 		'autocomplete_search_id'          => '#street_address',
 		'autocomplete_minimum'            => 3,

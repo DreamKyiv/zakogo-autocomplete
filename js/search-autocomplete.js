@@ -57,7 +57,7 @@
                 if ( ui.item.url !== '#' ) {
                 		createCookie('zakogo_street', ui.item.label,7);
                 		createCookie('zakogo_url', ui.item.url,7);
-        				$(this).after("<div style='width: 100%; margin-top: 3px; padding: 3px 10px;' class='ui-widget ui-widget-content ui-corner-all'><div class='zakogo-ac-previous ui-autocomplete-loading'>Завантажується сторінка округу...</div></div>");        				
+        				$(this).after("<div style='width: 100%; margin-top: 3px; padding: 3px 10px;' class='ui-widget ui-widget-content ui-corner-all'><div class='zakogo-ac-previous ui-autocomplete-loading'>Завантажується сторінка...</div></div>");
                         location = ui.item.url;
                         $(event.currentTarget).addClass('sa_searching');
                 } else {
